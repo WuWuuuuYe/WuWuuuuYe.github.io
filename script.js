@@ -18,7 +18,7 @@ function startTimer() {
             time--;
             displayTime(time);
         }
-    }, 10000);
+    }, 1000);
 }
 
 function pauseTimer() {
