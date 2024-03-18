@@ -1,42 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-    body {
-  background-image: url("hai.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; 
-  background-attachment: fixed;  
-}
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Piece - Main Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Countdown & Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
-   <header>
-        <h1>One Piece</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html" title="index.html">home</a ></li>
-                <li><a href="faculty-staff.html" title="faculty-staff.html">Faculty/Staff</a ></li>
-                <li><a href="courses.html" title="courses.html">Resource</a ></li>
-                <li><a href="application-Admission.html" title="application-Admission.html">Application-Admission</a ></li>
-                <li><a href="about-us.html" title="about-us.html">About One Piece</a ></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to One Piece</h2>
-            <p>Welcome to all who love One Piece</p >
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 One Piece. All rights reserved.</p >
-    </footer>
-</body>
+
+    <div id="timer">
+      <h2>Countdown Timer</h2>
+    <div id="time-display">00:00:00</div>
+      <input type="number" id="time-input" placeholder="Enter time in seconds">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+</div>
+
+<script src="script.js"></script>
+
+       <div class="calculator">
+        <h2>calculator</h2>
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="inputValue('1')">1</button>
+            <button onclick="inputValue('2')">2</button>
+            <button onclick="inputValue('3')">3</button>
+            <button onclick="inputValue('4')">4</button>
+	    <button onclick="inputValue('5')">5</button>
+	    <button onclick="inputValue('6')">6</button>
+	    <button onclick="inputValue('7')">7</button>
+	    <button onclick="inputValue('8')">8</button>
+	    <button onclick="inputValue('9')">9</button>
+	    <button onclick="inputValue('0')">0</button>
+            <button onclick="inputValue('+')">+</button>
+            <button onclick="inputValue('-')">-</button>
+	    <button onclick="inputValue('*')">*</button>
+ 	    <button onclick="inputValue('/')">/</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="1.js">
+   </body>
 </html>
+
